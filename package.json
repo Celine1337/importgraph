@@ -1,0 +1,46 @@
+{
+  "name": "importgraph",
+  "version": "1.0.0",
+  "description": "Import-graph analyzer for JS/TS codebases: circular dependencies, orphan modules, fan-in hotspots, Graphviz DOT export. CI-ready exit codes.",
+  "type": "module",
+  "bin": {
+    "importgraph": "dist/main.js"
+  },
+  "main": "dist/graph.js",
+  "types": "dist/graph.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/main.ts",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "import",
+    "graph",
+    "circular-dependencies",
+    "cycles",
+    "static-analysis",
+    "graphviz",
+    "dot",
+    "fan-in",
+    "typescript",
+    "ci"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Celine1337/importgraph.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}

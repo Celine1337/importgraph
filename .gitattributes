@@ -1,0 +1,4 @@
+build.sh linguist-generated=true
+test.sh linguist-generated=true
+package-lock.json linguist-generated=true
+assets/** linguist-generated=true
